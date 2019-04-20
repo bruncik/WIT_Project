@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WIT_Project</string>
+    <string name="read_data">Read Data</string>
+    <string name="create_data">Create Data</string>
+    <string name="update_data">Update Data</string>
+    <string name="delete_data">Delete Data</string>
+    <string name="plain_crud_app">Plain CRUD app</string>
+    <string name="sharedpreferences_example">SharedPreferences example:</string>
 </resources>
