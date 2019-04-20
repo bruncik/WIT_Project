@@ -18,6 +18,8 @@ class DeleteActivity : AppCompatActivity() {
             val editor = sharedPref.edit()
             editor.remove(title)
             editor.apply()
+
+            edtTitleDelete.setText("Data Successfully Deleted")
         }
     }
 }
