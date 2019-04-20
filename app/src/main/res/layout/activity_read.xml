@@ -15,23 +15,16 @@
             android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="36dp"
             app:layout_constraintTop_toTopOf="parent" tools:textSize="30sp"/>
-    <TexstView
-            android:text="Which Data You Want To See:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:layout_marginTop="48dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="40dp" android:layout_marginStart="40dp"/>
     <EditText
             android:id="@+id/edtReadActivity"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:inputType="text" android:layout_marginTop="33dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"/>
+            android:layout_marginRight="32dp" android:layout_marginTop="101dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"/>
     <Button
             android:text="Button"
             android:layout_width="wrap_content"
@@ -56,5 +49,13 @@
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:text="No Data"
             android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/textView7"
             app:layout_constraintHorizontal_bias="0.491"/>
+    <TextView
+            android:text="Your Title:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp" android:layout_marginTop="33dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" android:layout_marginBottom="49dp"
+            app:layout_constraintBottom_toTopOf="@+id/edtReadActivity"/>
 
 </android.support.constraint.ConstraintLayout>

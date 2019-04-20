@@ -18,6 +18,7 @@ class ReadActivity : AppCompatActivity() {
             val data = sharedPref.getString(title,"no data for this title")
 
             tvData.text = data
+            edtReadActivity.setText("Read another data")
         }
     }
 }

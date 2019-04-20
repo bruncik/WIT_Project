@@ -16,14 +16,19 @@ class CreateActivity : AppCompatActivity() {
 
         btnCreateActivity.setOnClickListener {
             // Taking the data from textView
-            val title = edtTitle.text.toString()
-            val data = edtData.text.toString()
-
+            val title = edtTitleCreate.text.toString()
+            val data = edtDataCreate.text.toString()
+            //Log.i("c",title)
+            //Log.i("TextView1",data)
             // SharedPreferences area
             val sharedPref: SharedPreferences = getSharedPreferences(Pref_Name, PRIVATE_MODE)
             val editor = sharedPref.edit()
             editor.putString(title,data)
             editor.apply()
+
+            // Toaster
+            edtTitleCreate.setText("Insert New Title")
+            edtDataCreate.setText("Insert New Data")
 
         }
 
