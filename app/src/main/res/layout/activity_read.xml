@@ -7,4 +7,54 @@
         android:layout_height="match_parent"
         tools:context=".ReadActivity">
 
+    <TextView
+            android:text="Read Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toTopOf="parent" tools:textSize="30sp"/>
+    <TexstView
+            android:text="Which Data You Want To See:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40dp" android:layout_marginStart="40dp"/>
+    <EditText
+            android:id="@+id/edtReadActivity"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text" android:layout_marginTop="33dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnReadActivity" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtReadActivity" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Your Data:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnReadActivity" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvData" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:text="No Data"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.491"/>
+
 </android.support.constraint.ConstraintLayout>
